@@ -1,0 +1,23 @@
+.analizaContainer{
+    margin-top: 80px;
+}
+
+.conceptsContainer{
+    margin-top: 80px;
+    height: auto;
+    background: #946161;
+    padding: 30px;
+    text-align: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.oneLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}

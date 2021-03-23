@@ -1,0 +1,23 @@
+.authors-container{
+    height: 1000px;
+}
+.ignacy{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    background: #666464;
+    overflow-x: hidden;
+    left: 0px;
+    background: #666464;
+}
+.jan{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #666464;
+    overflow-x: hidden;
+    right: 0;
+    background: green;
+}
