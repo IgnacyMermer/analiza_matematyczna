@@ -10,6 +10,8 @@ import SimpleLogika from "./screens/SimpleLogika";
 import SimpleKwantyfikatory from "./screens/SimpleKwantyfikatory";
 import Relacje from "./screens/Relacje";
 import Nierownosci1Grade1 from "./screens/Nierownosci1Grade1";
+import DwumianNewtona from "./screens/DwumianNewtona";
+import CiagiNiesk from "./screens/CiagiNiesk";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/analiza/pojecia-wstepne/kwantyfikatory" exact component={SimpleKwantyfikatory} />
           <Route path="/analiza/pojecia-wstepne/nierownosci-1-stopnia-1" exact component={Nierownosci1Grade1} />
           <Route path="/analiza/pojecia-wstepne/relacje" exact component={Relacje} />
+          <Route path="/analiza/pojecia-wstepne/dwumian-Newtona" exact component={DwumianNewtona} />
+          <Route path="/analiza/pojecia-wstepne/ciagi-nieskonczone" exact component={CiagiNiesk} />
           <Route path='/analiza/pojecia-wstepne' exact component={FirstConcepts} />
           <Route path='/analiza' component={AnalizaMain} />
           <Route path='/autorzy' component={Authors} />
