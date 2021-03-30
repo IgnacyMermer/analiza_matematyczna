@@ -57,6 +57,7 @@ export default function FirstConcepts(){
             <Link to="/analiza/pojecia-wstepne/nierownosci-1-stopnia-1"><button>Nierówności 1-stopnia z jedną niewiadomą</button></Link><br/>
             <Link to="/analiza/pojecia-wstepne/dwumian-Newtona"><button>Dwumian Newtona</button></Link><br/>
             <Link to="/analiza/pojecia-wstepne/ciagi-nieskonczone"><button>Ciagi nieskonczone</button></Link><br/>
+            <Link to="/analiza/pojecia-wstepne/szeregi-liczbowe"><button>Szeregi liczbowe</button></Link><br/>
 
       </div>
     );

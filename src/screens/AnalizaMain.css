@@ -32,6 +32,12 @@ sub{
     position: relative;
     top: 0.3em;
 }
+.nospace{
+    top: 0;
+}
+.bigspace{
+    top: -0.8em;
+}
 
 .verySmall{
     font-size: 1px;

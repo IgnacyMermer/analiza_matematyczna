@@ -72,10 +72,12 @@ function Navbar(){
                   <ul className={click?'nav-menu active':'nav-menu'}>
 
                       {items.map(({text, link, key })=> {
-                          var tab = window.location.pathname.toString().split("/");
+                          /*var tab = window.location.pathname.toString().split("/");
                           var localization = tab[tab.length-1];
 
-                          localization='/'+localization;
+                          localization='/'+localization;*/
+                          let localization = window.location.pathname.toString();
+                          //console.log(localization);
 
                           return <animated.div key={key}  style={{
                               opacity: key===1?x1.interpolate({ range: [0, 1], output: [1, 1] }):
@@ -90,11 +92,11 @@ function Navbar(){
                                       output: [1, 0.99, 0.98, 1.02, 0.98, 1.02, 1.01, 1]}).interpolate(x3 => `scale(${x3})`):
                                   x4.interpolate({range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
                                       output: [1, 0.99, 0.98, 1.02, 0.98, 1.02, 1.01, 1]}).interpolate(x4 => `scale(${x4})`)
-                          }} onMouseEnter={()=>key===1?toggle1(!state1):key===2?toggle2((!state2)):key===3?toggle3((!state3)):toggle4(!state4)}
-                                        onClick={()=>console.log("lla")}
-                                        className='nav-item'>
+                          }} onMouseEnter={()=>key===1?toggle1(!state1):key===2?toggle2((!state2)):
+                              key===3?toggle3((!state3)):toggle4(!state4)} className='nav-item'>
                               <Link to={link} onClick={handleClickMenu}
-                                    className={click&&link===localization?"nav-link active this":link===localization?"nav-link this":
+                                    className={click&&(link!=='/'?(localization.includes(link)):link===localization)
+                                        ?"nav-link active this":link===localization?"nav-link this":
                                         click?"nav-link active":"nav-link"}>
                                   {text}
                               </Link>
