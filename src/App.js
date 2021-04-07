@@ -15,6 +15,9 @@ import CiagiNiesk from "./screens/CiagiNiesk";
 import ScrollToTop from "./ScrollToTop";
 import SzeregiLiczbowe from "./screens/SzeregiLiczbowe";
 import SzeregiNieujemne from "./screens/SzeregiNieujemne";
+import SzeregiPrzemienne from "./screens/SzeregiPrzemienne";
+import FunkcjeJednejZmiennej from "./screens/FunkcjeJednejZmiennej";
+import Symetria_prosta from "./screens/Symetria_prosta";
 
 function App() {
   return (
@@ -33,8 +36,11 @@ function App() {
           <Route path="/analiza/pojecia-wstepne/dwumian-Newtona" exact component={DwumianNewtona} />
           <Route path="/analiza/pojecia-wstepne/ciagi-nieskonczone" exact component={CiagiNiesk} />
           <Route path="/analiza/pojecia-wstepne/szeregi-liczbowe/nieujemne" exact component={SzeregiNieujemne} />
+          <Route path="/analiza/pojecia-wstepne/szeregi-liczbowe/przemienne" exact component={SzeregiPrzemienne} />
+          <Route path="/analiza/pojecia-wstepne/symetria-prosta" exact component={Symetria_prosta} />
           <Route path="/analiza/pojecia-wstepne/szeregi-liczbowe" exact component={SzeregiLiczbowe} />
           <Route path='/analiza/pojecia-wstepne' exact component={FirstConcepts} />
+          <Route path='/analiza/funkcja-jednej-zmiennej' exact component={FunkcjeJednejZmiennej} />
           <Route path='/analiza' component={AnalizaMain} />
           <Route path='/autorzy' component={Authors} />
           <Route path='/kontakt' component={Contact} />

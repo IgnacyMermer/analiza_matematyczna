@@ -12,14 +12,6 @@
     background: linear-gradient(115deg, rgba(82,64,174,1) 14%, rgba(147,154,189,1) 86%);
 }
 
-span{
-    position: absolute;
-    background: #fff;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
-}
 
 @keyframes animate {
     0%{

@@ -41,7 +41,7 @@ export default function FirstConcepts(){
             <br/><br/>
             <h1>Logika w zbiorach</h1>
 
-          <Link to="/analiza/pojecia-wstepne/logika"><button>Podstawy logiki</button></Link>
+            <Link to="/analiza/pojecia-wstepne/logika"><button>Podstawy logiki</button></Link>
 
             <p><img src={AlubB}/></p>
             <p>A &#8746; B, inaczej: x &#8712; A &#8744; x &#8712; B</p>
