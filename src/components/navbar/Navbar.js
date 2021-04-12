@@ -53,9 +53,7 @@ function Navbar(){
           <nav className="navbar">
               <div className="navbar-container">
 
-                  <Link to="/" className="navbar-logo" onClick={closeMenu}>
-                      Strona
-                  </Link>
+
 
                   {/*!githubButton&&<div className='menu-item' onClick={handleClickMenu}>
                       <fa-icon className={click?'fas fa-times':'fas fa-bars'} color="#2980B9" size="2em"></fa-icon>

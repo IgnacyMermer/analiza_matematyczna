@@ -21,7 +21,13 @@ export default function Symetria_prosta(){
 
 			<h2>Wykres funkcji odwrotnej</h2>
 			<p>
+				{/*rysunek*/}
+			</p>
 
+			<br/><br/>
+
+			<p>
+				
 			</p>
 		</div>
 	);

@@ -54,3 +54,15 @@ sub{
     padding-right: 14px;
     padding-left: 14px;
 }
+
+.italic{
+    font-style: italic;
+}
+
+p{
+    font-size: 18px;
+}
+
+MathJax{
+    margin-top: 20px;
+}

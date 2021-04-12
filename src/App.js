@@ -18,15 +18,23 @@ import SzeregiNieujemne from "./screens/SzeregiNieujemne";
 import SzeregiPrzemienne from "./screens/SzeregiPrzemienne";
 import FunkcjeJednejZmiennej from "./screens/FunkcjeJednejZmiennej";
 import Symetria_prosta from "./screens/Symetria_prosta";
+import GraniceFunkcji from "./screens/GraniceFunkcji";
+import Pochodne from "./screens/Pochodne";
+import LiczbyZespolone from "./screens/LiczbyZespolone";
+import SideBar from "./components/sidebar/SideBar";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <ScrollToTop/>
-        <header>
+        {/*<header>
           <Navbar/>
+        </header>*/}
+        <header>
+          <SideBar/>
         </header>
+
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path="/analiza/pojecia-wstepne/logika" exact component={SimpleLogika} />
@@ -41,10 +49,14 @@ function App() {
           <Route path="/analiza/pojecia-wstepne/szeregi-liczbowe" exact component={SzeregiLiczbowe} />
           <Route path='/analiza/pojecia-wstepne' exact component={FirstConcepts} />
           <Route path='/analiza/funkcja-jednej-zmiennej' exact component={FunkcjeJednejZmiennej} />
+          <Route path='/analiza/granice-funkcji' exact component={GraniceFunkcji} />
+          <Route path='/analiza/pochodne' exact component={Pochodne} />
+          <Route path='/analiza/liczby-zespolone' exact component={LiczbyZespolone} />
           <Route path='/analiza' component={AnalizaMain} />
           <Route path='/autorzy' component={Authors} />
           <Route path='/kontakt' component={Contact} />
         </Switch>
+
       </Router>
     </div>
   );
